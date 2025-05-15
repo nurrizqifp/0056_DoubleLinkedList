@@ -109,5 +109,10 @@ public:
             }
             
         }
+        else
+        {
+            // Step 3: link previous node to next of current
+            current->prev->next = current->next;
+        }
     }
 };
